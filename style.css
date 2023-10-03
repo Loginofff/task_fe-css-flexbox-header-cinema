@@ -5,4 +5,70 @@ body {
 main {
   width: 400vh;
 }
+header {
+  background-image:url(/imagebanner.jpeg) ;
+  min-height: 120px;
+  height: 100%;
+  position:sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
 
+}
+.nav {
+
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row ;
+}
+
+
+.navContainer  {
+  display: flex;
+  align-items: flex-end;
+}
+.playHeading {
+  margin: 0px;
+  color: aliceblue;
+  opacity: 50%;
+  transition:opacity 0.5 ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.oscar {
+  transition:opacity 0.5 ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navInput {
+  opacity: 50%;
+  transition: opacity 0.5 ease;
+  cursor: pointer;
+  white-space: nowrap;
+  height:20px ;
+}
+
+.navInput::placeholder {
+  border-radius: 10%;
+}
+
+.navContainer:hover .play,
+.navContainer:hover .playHeading {
+  opacity: 1;
+}
+
+.navContainer:hover .oscar,
+.navContainer:hover .playHeading {
+  opacity: 1;
+}
+.navInput:hover {
+opacity: 1;
+}
